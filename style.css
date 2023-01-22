@@ -1,0 +1,288 @@
+/* nav css */
+*{
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px;
+    background-color: #282A35;
+}
+.navbar .heading{
+    font-size: 30px;
+}
+.navbar .sm{
+    color: #04AA6D;
+    text-shadow: .4px .4px #FFF;
+    font-weight: 600;
+    font-size: 27px;
+    flex: 40%;
+    padding: 5px 0 0 20px;
+}
+.navbar nav{
+    padding: 10px;
+}
+.navbar nav a,#menu{
+    font-size: 17px;
+    font-weight: 600;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 10px;
+}
+#menu{
+  display: none;
+}
+#close{
+    display: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: #FFF;
+    padding: 5px 10px;
+    /* margin: 10px; */
+}
+.btn,.navbar nav a:hover{
+    color: white;
+    background-color: #04AA6D;
+}
+@media screen  and (max-width:900px){
+    .navbar .sm{
+        flex: 10%;
+    }
+    .navbar .heading{
+        font-size: 20px;
+    }
+    .navbar nav a{
+        font-size: 15px;
+        margin: 1px;
+    }
+    #close{
+        display: none;
+    }
+}
+@media screen  and (max-width:570px){
+    .navbar{
+        display: block;
+    }
+    .navbar .sm{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navbar .heading{
+        flex: 50%;
+        font-size: 23px;
+    }
+    #nav{
+        display: none;
+        /* for hidding navbar */
+    }
+    #nav a{
+        display: block;
+    }
+    #menu{
+        display: block;
+        margin: 0.5px;
+    }
+    .navbar button{
+        border: 0;
+        background-color: white;
+    }
+}
+/*  */
+  .greeting,.orange{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 5px 5px black;
+  }
+  .orange{
+    margin-left: 0;
+    text-shadow: 5px 5px red;
+  }
+  .header{
+    border-radius: 15px;
+  }
+  h1{
+    font-size: 35px;
+    color: #87c58b;
+  }
+  h2{
+    text-align: center;
+  }
+  .quote{
+    font-size: 30px;
+    animation: color-change 4s infinite;
+    padding: 15px;
+  }
+  .time{
+    color: red;
+    font-size: 45px;
+  }
+  .centre{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .centerdiv{
+    width: 700px;
+    background-color: rgb(21,32,43);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  .grey{
+    width: 1000px;
+    background-color: #E7E9EB;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .todaystask{
+    margin-bottom: 70px;
+  }
+  .todaystask li{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #06d6a0;
+  }
+  .darkyellow{
+    color: #faca6b;
+  }
+  .purple{
+    color: #c5a5c5;
+  }
+  .form{
+    background-color: #ffffcc;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .form p{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .btn{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  @keyframes color-change {
+    0% { color: #ddbea8; }
+    10% { color: #06d6a0; }
+    20% { color: #118ab2; }
+    30% { color: #8cb369; }
+    40% { color: #83c5be; }
+    50% { color: blue; }
+    60% { color: #014f86; }
+    70% { color: red; }
+    80% { color: #8ac926; }
+    90% { color: #b5179e; }
+    100% { color: #ef476f; }
+  }
+
+  
+@media screen  and (max-width:1000px){
+  .grey{
+    width: 700px;
+  }
+  .centerdiv{
+    width: 500px;
+  }
+}
+@media screen  and (max-width:775px){
+  .grey{
+    width: 550px;
+  }
+  .centerdiv{
+    width: 450px;
+  }
+  .form{
+    width: 250px;
+  }
+  .todaystask{
+    margin-bottom: 40px;
+  }
+  .quote{
+    font-size: 20px;
+  }
+  .greeting{
+    font-size: 30px;
+  }
+  .form p{
+    font-size: 16px;
+  }
+  .time{
+    font-size: 35px;
+  }
+  .task{
+    font-size: 28px;
+  }
+}
+@media screen  and (max-width:610px){
+  .grey{
+    width: 480px;
+  }
+  .centerdiv{
+    width: 380px;
+  }
+  .form{
+    width: 200px;
+  }
+  .form p{
+    font-size: 13px;
+  }
+}
+@media screen  and (max-width:525px){
+  .grey{
+    width: auto;
+  }
+  .centerdiv{
+    width: auto;
+  }
+  .form{
+    width: 150;
+    padding: 5px;
+  }
+  .form p{
+    margin-bottom: -15px;
+  }
+  .btn{
+    font-size: 10px;
+    padding: 3px 5px;
+  }
+  .task{
+    font-size: 24px;
+  }
+  .time{
+    font-size: 28px;
+  }
+}
+@media screen  and (max-width:300px){
+  .form{
+    width: auto;
+    padding: 2px;
+  }
+  .task{
+    font-size: 16px;
+  }
+  .todaystask li{
+    font-size: 12px;
+  }
+  .quote{
+    font-size: 15px;
+  }
+  .greeting{
+    font-size: 24px;
+  }
+}

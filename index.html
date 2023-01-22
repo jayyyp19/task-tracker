@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="sm">
+            <p class="heading">Task Tracker</p>
+            <button id="menu" onclick="unhide()"><img src="navbar/menu.png" alt="" width="20px" height="20px"></button>
+            <button id="close" onclick="hide()"><img src="navbar/close.png" alt="" width="18px" height="18px"></button>
+        </div>
+        <nav id="nav">
+            <a href="" class="active vertical">Completed task</a>
+            <a href="" class="vertical">Overall Task</a>
+            <a href="" class="vertical">Uncompleted Task</a>
+        </nav>
+    </div>
+    <h1 class="greeting">Hey <span class="orange">Jay</span>! Good moring,</h1>
+    <div class="centre">
+        <div class="grey">
+            <marquee scrollamount="17" direction="right" height="100px">
+                <h2>You have left <span id="timeremaining" class="time"></span> to complete the course.</h2>
+            </marquee>
+            <div class="centerdiv">
+                <div class="todaystask">
+                    <h1><span class="task"> Your Today's task are: </span></h1>
+                    <li><span class="purple">Chapter</span> <span class="darkyellow">3 </span><span class="purple">in
+                        </span><span class="darkyellow">ADA</span></li>
+                    <li><span class="purple">Chapter</span> <span class="darkyellow">4 </span><span class="purple">in
+                        </span><span class="darkyellow">NT</span></li>
+                </div>
+                <div class="form">
+                    <form action="index.html" method="post">
+                        <p>Did you completed your task?</p><br>
+                        <input type="button" class="btn" value="Yes">
+                        <input type="button" class="btn" value="No">
+                    </form>
+                </div>
+            </div>
+            <div class="header">
+                <h2 id="quotes" class="quote"></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
