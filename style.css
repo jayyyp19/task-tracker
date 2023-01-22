@@ -267,6 +267,12 @@
   .time{
     font-size: 28px;
   }
+  .greeting{
+    font-size: 24px;
+  }
+    .quote{
+    font-size: 15px;
+  }
 }
 @media screen  and (max-width:300px){
   .form{
@@ -278,11 +284,5 @@
   }
   .todaystask li{
     font-size: 12px;
-  }
-  .quote{
-    font-size: 15px;
-  }
-  .greeting{
-    font-size: 24px;
   }
 }
